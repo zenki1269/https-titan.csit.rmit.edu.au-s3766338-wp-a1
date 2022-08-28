@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Clinic</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <header>
+        <div class="header-wrapper">
+            <h1 class="header-logo">
+                Medical <span>clinic</span> 
+            </h1>
+            <ul class="header-navigation">
+                <li class="header-navigation__element"><a href="./index.html" class="header-navigation__element__link">HOME</a></li>
+                <li class="header-navigation__element"><a href="" class="header-navigation__element__link">ABOUT US</a></li>
+                <li class="header-navigation__element"><a href="" class="header-navigation__element__link">STAFF PROFILE</a></li>
+                <li class="header-navigation__element"><a href="" class="header-navigation__element__link">SERVICE</a></li>
+                <li class="header-navigation__element"><a href="" class="header-navigation__element__link">BOOKING</a></li>
+            </ul>
+        </div>
+    </header>
+    <section> 
+        <div class="main-booking">
+            <form method="post" action="#">
+                <table>
+                    <tr>
+                        <td>Patient Id</td>
+                        <td> 
+                            <input id="pid" type="text" name="pid">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Date
+                        </td>
+                        <td>
+                            <input type="date" id="date" name="date">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Time</td>
+                        <td class="time">
+                            <div class="pillgroup">
+                                <label class="pillgroup__element">9am - 12pm</label>
+                                <label class="pillgroup__element">12pm - 3pm</label>
+                                <label class="pillgroup__element">3pm - 6pm</label>
+                            </div>
+                            <input type="checkbox" class="checkbox" value="1" name="time[]"> </input>
+                            <input type="checkbox" class="checkbox" value="2" name="time[]"> </input>
+                            <input type="checkbox" class="checkbox" value="3" name="time[]"> </input>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Reason</td>
+                        <td>
+                            <select name="reason" id="reason">
+                                <option value="0"> advice option</option>
+                                <option value="1">Childhood Vaccination Shots</option>
+                                <option value="2">Influenza Shot</option>
+                                <option value="3">Covid BoosterShot</option>
+                                <option value="4">Blood test</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <span class="advice">
+                                Childhood vaccines: A disclaimer that multiple vaccines are normally
+                                administered in combination and may cause the child to be sluggish
+                                or feverous for 24 – 48 hours afterwards. 
+                            </span>
+                            <span class="advice">
+                                Influenza: The best time to get vaccinated is in April and May each
+                                year for optimal protection over the winter months.
+                            </span>
+                            <span class="advice">
+                                Covid Booster Shot: Advice that everyone should arrange to have
+                                their third shot as soon as possible and adults over the age of 30
+                                should have their fourth shot to protect against new variant strains.
+                            </span>
+                            <span class="advice">
+                                Blood test: That some tests require some fasting ahead of time and
+                                that a staff member will advise them on this prior to the
+                                appointment.
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input id="submitbtn" type="submit" value="submit form"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-wrapper">
+            <ul>
+                <li><i class="fas fa-hospital "></i> Medical Clinic</li>
+                <li><i class="fa fa-location-arrow" aria-hidden="true"></i> 15-37 Newton Dr, Beerwah QLD 4519, Úc</li>
+                <li><i class="fa fa-phone" aria-hidden="true"></i>+61754399729</li>
+            </ul>
+            <ul>
+                <li> <i class="fa fa-user-o" aria-hidden="true"></i> Minh Duc Nguyen</li>
+                <li><i class="fa fa-bookmark" aria-hidden="true"></i> student id: s3766338</li>
+            </ul>
+        </div>
+    </footer>
+    <script src="./ index.js"></script>
+</body>
+</html>
